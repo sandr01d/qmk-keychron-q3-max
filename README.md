@@ -8,11 +8,11 @@ Custom keymap for the Keychron Q3 Max.
 ## Features
 
 * Adds number keys to the home row of the `WIN_FN` layer to allow fast number typing without a numpad.
-* Uses [layer tab toggle](https://docs.qmk.fm/feature_layers#switching-and-toggling-layers) for the `Fn` key and activate it with 2 taps for faster switching to the `WIN_FN` layer.
+* Uses [Layer Tab Toggle](https://docs.qmk.fm/feature_layers#switching-and-toggling-layers) for the `Fn` key and activates it with 2 taps for faster switching to the `WIN_FN` layer.
 * Enables [Caps Word](https://docs.qmk.fm/features/caps_word)
-* Sets `KC_SLSH` as non breaking, shifted key instead of `KC_MINS` to have the minus key shifted and non breaking on German keyboard layout
-* Does not break Caps Word when pressing shift keys
-* Uses [tap dance](https://docs.qmk.fm/features/tap_dance#tap-dance-a-single-key-can-do-3-5-or-100-different-things) to control music with the rotary knob:
+    * Sets `KC_SLSH` as non breaking, shifted key instead of `KC_MINS` to have the minus key shifted and non breaking on German keyboard layout
+    * Does not break Caps Word when pressing shift keys
+* Uses [Tap Dance](https://docs.qmk.fm/features/tap_dance#tap-dance-a-single-key-can-do-3-5-or-100-different-things) to control music with the rotary knob:
     * **Single tap:** Play/Pause track
     * **Double tap:** Next track
     * **Triple tap**: Previous track
