@@ -15,11 +15,14 @@ enum tap_dance {
 void dance_playback(tap_dance_state_t *state, void *user_data) {
     switch (state->count) {
         case 1:
-            tap_code(KC_MPLY); break;
+            tap_code(KC_MPLY);
+            break;
         case 2:
-            tap_code(KC_MNXT); break;
+            tap_code(KC_MNXT);
+            break;
         case 3:
-            tap_code(KC_MPRV); break;
+            tap_code(KC_MPRV);
+            break;
     }
 }
 
@@ -83,8 +86,8 @@ bool caps_word_press_user(uint16_t keycode) {
     switch (keycode) {
         // Keycodes that continue Caps Word, with shift applied.
         case KC_A ... KC_Z:
-        case KC_SLSH: // minus on German keyboard layout
-            add_weak_mods(MOD_BIT(KC_LSFT));  // Apply shift to next key.
+        case KC_SLSH:                        // Minus on German keyboard layout
+            add_weak_mods(MOD_BIT(KC_LSFT)); // Apply shift to next key.
             return true;
 
         // Keycodes that continue Caps Word, without shifting.
@@ -96,6 +99,6 @@ bool caps_word_press_user(uint16_t keycode) {
             return true;
 
         default:
-            return false;  // Deactivate Caps Word.
+            return false; // Deactivate Caps Word.
     }
 }
